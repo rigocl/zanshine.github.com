@@ -1,6 +1,6 @@
 ---
 layout: main
-title: Welcome to 'Zanshine - Software Engineering'
+title: Welcome to my blog.
 ---
 
-Zanshine - Software Engineering is going to be an awesome blog.
+Welcome to my blog.

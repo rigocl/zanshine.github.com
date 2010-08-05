@@ -1,0 +1,8 @@
+--- 
+theme: plain
+author: "Stéphane Robert Richard"
+email: "blog@zanshine.com"
+title: "Stephane R. Richard's blog"
+url: "http://zanshine.github.com"
+description: "This blog is a collection of observations about various software engineering topics I'm interested in, ranging from computer languages and design patterns to software architecture, software testing and correctness proving."
+short_description: "A blog about software engineering"

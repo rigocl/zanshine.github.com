@@ -1,7 +1,7 @@
 ---
 layout: main
-title: Stéphane R. Richard - Software Engineering
+title: Home
 ---
 
-<a href="http://github.com//zanshine.github.com">Stéphane R. Richard - Software Engineering</a>
+<a href="{{ site.url }}">Stéphane R. Richard - Software Engineering</a>
 
