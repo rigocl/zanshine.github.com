@@ -1,10 +1,31 @@
-@import compass/reset
-@import blueprint
-@import blueprint/liquid
-@import blueprint/typography
+@import "compass/reset"
+@import "blueprint"
+@import "blueprint/liquid"
+@import "blueprint/typography"
+@import "blueprint/interaction"
 
-+blueprint
+@import "compass/utilities"
+
+//Configuration
+$blueprint-liquid-grid-columns        = 24
+$blueprint-liquid-container-width     = 80%
+
 +blueprint-typography
 
 #container
+  :min-width 950px
+  :max-width 1400px
   +container
+
+#header, #footer 
+  ul
+    +horizontal-list
+
+#content
+  +column(18)
+
+#sidebar
+  +column(6, true)
+
+.notice
+  +notice

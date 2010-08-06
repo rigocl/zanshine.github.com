@@ -1,0 +1,6 @@
+---
+layout: main
+title: Erat autem diritatis eius hoc quoque
+---
+
+Welcome to my blog.

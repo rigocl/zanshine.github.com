@@ -1,0 +1,6 @@
+---
+layout: main
+title: Illud autem non dubitatur quod cum esset
+---
+
+Welcome to my blog.

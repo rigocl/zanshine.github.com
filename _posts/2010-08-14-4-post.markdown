@@ -1,0 +1,6 @@
+---
+layout: main
+title: Iis igitur est difficilius satis facere,
+---
+
+Welcome to my blog.

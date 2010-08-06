@@ -1,0 +1,6 @@
+---
+layout: main
+title: Per hoc minui studium suum existimans
+---
+
+Welcome to my blog.

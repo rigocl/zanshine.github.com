@@ -1,0 +1,6 @@
+---
+layout: main
+title: Iam in altera philosophiae parte. quae
+---
+
+Welcome to my blog.
