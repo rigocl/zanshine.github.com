@@ -7,15 +7,16 @@
 @import "compass/utilities"
 
 //Configuration
-$blueprint-liquid-grid-columns        = 24
+$blueprint-liquid-grid-columns        : 24
+$blueprint-liquid-container-width     : 80%
+$blueprint-liquid-container-min-width : 950px
+
 
 +blueprint-typography
 
 #container
-  :width 80%
-  :min-width 950px
-  :max-width 1400px
   +container
+  :max-width 1280px
 
 #header, #footer 
   ul
