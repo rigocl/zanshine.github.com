@@ -1,6 +1,7 @@
 ---
 layout: main
 title: Constituendi autem sunt qui sint in
+category: [loremipsum, lorem, ipsum]
 ---
 
 
