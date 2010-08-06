@@ -294,8 +294,9 @@ caption {
   color: #111111;
 }
 
-/* line 15, ../_lib/sass/src/screen.sass */
+/* line 14, ../_lib/sass/src/screen.sass */
 #container {
+  width: 80%;
   min-width: 950px;
   max-width: 1400px;
   min-width: 950px;
