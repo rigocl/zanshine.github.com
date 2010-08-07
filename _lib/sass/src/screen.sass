@@ -24,6 +24,8 @@
 $blueprint-liquid-grid-columns        : 24
 $blueprint-liquid-container-width     : 80%
 $blueprint-liquid-container-min-width : 950px
+$content-columns-width                : 18
+$sidebar-columns-width                : $blueprint-liquid-grid-columns - $content-columns-width
 
 //Fonts
 $main-font-family                     : georgia,serif
@@ -83,12 +85,11 @@ $alternate-color-light                : #222
     &:hover
       :text-decoration underline
   #header
-    h1 a
+    h1 a .title
       :font-size 120%
       :font-weight bolder
-  #navigation
-    .author
-      :font-size 120%
+  #author
+    :font-size 120%
 
 
 //====================================================
@@ -102,11 +103,15 @@ $alternate-color-light                : #222
   #container, #footer
     +zanshine-container
 
-  #content
-    +column(18)
+  #content, #page-title
+    +column($content-columns-width)
 
-  #navigation
-    +column(6, true)
+  #navigation, #author
+    +column($sidebar-columns-width, true)
+
+  #header h1
+    :float right
+    :margin-right 10%
 
 
 //====================================================
@@ -119,11 +124,13 @@ $alternate-color-light                : #222
   html, body
     :color $main-color
 
-  #header, #navigation
-    h1, h2
-      :color $main-color-light
-      a
-        :color inherit
+  h1, h2
+    :color inherit
+
+  #header, #author
+    :color $main-color-light
+    a
+      :color inherit
 
 
 //====================================================

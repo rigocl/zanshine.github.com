@@ -460,7 +460,7 @@ caption {
   color: #111111;
 }
 
-/* line 80, ../_lib/sass/src/screen.sass */
+/* line 82, ../_lib/sass/src/screen.sass */
 a {
   color: #4183c4;
   text-decoration: none;
@@ -481,19 +481,19 @@ a:hover {
 a:active {
   color: #4183c4;
 }
-/* line 83, ../_lib/sass/src/screen.sass */
+/* line 85, ../_lib/sass/src/screen.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 86, ../_lib/sass/src/screen.sass */
-#header h1 a {
+/* line 88, ../_lib/sass/src/screen.sass */
+#header h1 a .title {
   font-size: 120%;
   font-weight: bolder;
 }
 
-/* line 90, ../_lib/sass/src/screen.sass */
-#navigation .author {
+/* line 91, ../_lib/sass/src/screen.sass */
+#author {
   font-size: 120%;
 }
 
@@ -522,7 +522,7 @@ html, body {
   height: 72px;
 }
 
-/* line 102, ../_lib/sass/src/screen.sass */
+/* line 103, ../_lib/sass/src/screen.sass */
 #container, #footer {
   min-width: 950px;
   width: 80%;
@@ -532,8 +532,8 @@ html, body {
   max-width: 1280px;
 }
 
-/* line 105, ../_lib/sass/src/screen.sass */
-#content {
+/* line 106, ../_lib/sass/src/screen.sass */
+#content, #page-title {
   display: inline;
   float: left;
   overflow: hidden;
@@ -541,8 +541,8 @@ html, body {
   margin-right: 1.042%;
 }
 
-/* line 108, ../_lib/sass/src/screen.sass */
-#navigation {
+/* line 109, ../_lib/sass/src/screen.sass */
+#navigation, #author {
   display: inline;
   float: left;
   overflow: hidden;
@@ -550,33 +550,44 @@ html, body {
   margin-right: 0;
 }
 
-/* line 119, ../_lib/sass/src/screen.sass */
+/* line 112, ../_lib/sass/src/screen.sass */
+#header h1 {
+  float: right;
+  margin-right: 10%;
+}
+
+/* line 124, ../_lib/sass/src/screen.sass */
 html, body {
   color: #222222;
 }
 
-/* line 123, ../_lib/sass/src/screen.sass */
-#header h1, #header h2, #navigation h1, #navigation h2 {
-  color: #aaaaaa;
-}
-/* line 125, ../_lib/sass/src/screen.sass */
-#header h1 a, #header h2 a, #navigation h1 a, #navigation h2 a {
+/* line 127, ../_lib/sass/src/screen.sass */
+h1, h2 {
   color: inherit;
 }
 
-/* line 136, ../_lib/sass/src/screen.sass */
+/* line 130, ../_lib/sass/src/screen.sass */
+#header, #author {
+  color: #aaaaaa;
+}
+/* line 132, ../_lib/sass/src/screen.sass */
+#header a, #author a {
+  color: inherit;
+}
+
+/* line 143, ../_lib/sass/src/screen.sass */
 hr {
   border: 0px solid #222222;
   height: 1px;
   background-color: #222222;
 }
 
-/* line 143, ../_lib/sass/src/screen.sass */
+/* line 150, ../_lib/sass/src/screen.sass */
 #header h1 a:hover, #header h2 a:hover {
   text-decoration: none;
 }
 
-/* line 146, ../_lib/sass/src/screen.sass */
+/* line 153, ../_lib/sass/src/screen.sass */
 #navigation ul {
   padding-left: 0;
   list-style-image: none;
