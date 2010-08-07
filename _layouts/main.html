@@ -15,37 +15,32 @@
   </head>
   <body>
     <div id="container">
-      
+
       <!-- header -->
       <div id="header" class="title">
-        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-        <div id="navigation">
-          {% include navigation.html %}
-        </div>
+        <h1><a href="{{ site.url }}">{{ site.title }}</a> {{ site.subtitle }}</h1>
       </div>
-      
+
       <!-- body -->
-      <div id="body">
-
-        <div id="messages">
-          <!-- <p class="notice">This blog is currently in development. The content is mainly a fake. Be back soon for reading software engineering topics here...</p> -->
-        </div>
-
-        <div id="content">
-          {{ content }}
-        </div>
-        
-        <div id="sidebar">
-          {% include sidebar.html %}
-        </div>
-
+      <div id="content">
+        <h2>{{ page.title }}</h2>
+        {{ content }}
       </div>
-      
+
+      <!-- navigation -->
+      <div id="navigation">
+        <h2 class="author">by {{ site.author }}</h2>
+        {% include navigation.html %}
+      </div>
+
+      <div id="container-footer"></div>
+    </div>
+
       <!-- footer -->
       <div id="footer">
         {% include navigation.html %}
       </div>
 
-    </div>
   </body>
 </html>
+

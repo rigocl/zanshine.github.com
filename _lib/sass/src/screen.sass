@@ -1,37 +1,73 @@
-@import "compass/reset"
+//====================================================
+//
+//	IMPORTS
+//
+//====================================================
+
 @import "blueprint"
+@import "blueprint/reset"
 @import "blueprint/liquid"
 @import "blueprint/typography"
 @import "blueprint/interaction"
 
+@import "compass/reset"
 @import "compass/utilities"
+@import "compass/layout/sticky-footer"
 
-//Configuration
+//====================================================
+//
+//	VARIABLES
+//
+//====================================================
+
+//Layout
 $blueprint-liquid-grid-columns        : 24
 $blueprint-liquid-container-width     : 80%
 $blueprint-liquid-container-min-width : 950px
 
-$font-family-main                     : georgia,serif
-$font-family-alternate                : lucida sans unicode, lucida grande, sans-serif
-$font-family-mono                     : lucida console, monaco, monospace
+//Fonts
+$main-font-family                     : georgia,serif
+$alternate-font-family                : lucida sans unicode, lucida grande, sans-serif
+$fixed-font-family                    : lucida console, monaco, monospace
 
-+global-reset
-
-$blueprint-font-family                : $font-family-main
-$blueprint-fixed-font-family          : $font-family-mono
+$blueprint-font-family                : $main-font-family
+$blueprint-fixed-font-family          : $fixed-font-family
 $blueprint-font-size                  : 16px
-+blueprint-typography
+
+//Colors
+$main-color                           : #222
+$main-color-strong                    : #000
+$main-color-light                     : #aaa
+
+$secondary-color                      : #4183C4
+$secondary-color-strong               : #222
+$secondary-color-light                : #222
+
+$alternate-color                      : #222
+$alternate-color-strong               : #222
+$alternate-color-light                : #222
 
 //====================================================
 //
-//	MIXINS
+//	GENERIC MIXINS
 //
 //====================================================
 
-=paragraph
-  :margin
-    :top    .2em
-    :bottom .2em
+=zanshine-container
+  +container
+  :max-width 1280px
+
+
+//====================================================
+//
+//	RESET
+//
+//====================================================
+
+=zanshine-reset
+  //+global-reset
+  +blueprint-global-reset
+
 
 //====================================================
 //
@@ -40,48 +76,20 @@ $blueprint-font-size                  : 16px
 //====================================================
 
 =zanshine-typography
-  html, body
-    :font
-      :family $font-family-main
-      :size   2.2ex
-      :weight 300
-    :line-height 1.3
+  +blueprint-typography
+  a
+    +link-colors($secondary-color, $secondary-color, $secondary-color, $secondary-color, $secondary-color)
+    :text-decoration none
+    &:hover
+      :text-decoration underline
+  #header
+    h1 a
+      :font-size 120%
+      :font-weight bolder
+  #navigation
+    .author
+      :font-size 120%
 
-  h1, h2, h3, h4, h5, h6
-    :margin
-      :top    1em
-      :bottom .3em
-
-  ul, ol
-    +paragraph
-    :margin
-      :left 2ex
-  p, dl
-    +paragraph
-
-  h1
-    :font-size 300%
-  h2
-    :font-size 200%
-  h3
-    :font-size 150%
-  h4
-    :font-size 130%
-  h5
-    :font-size 100%
-    :text-transform uppercase
-  h6
-    :font
-      :size 100%
-      :weight bold
-
-  blockquote
-    :font-style italic
-
-  pre
-    :font-family $font-family-mono
-
-//+zanshine-typography
 
 //====================================================
 //
@@ -89,19 +97,16 @@ $blueprint-font-size                  : 16px
 //
 //====================================================
 
-#container
-  +container
-  :max-width 1280px
+=zanshine-layout
+  +sticky-footer(72px, "#container", "#container-footer", "#footer")
+  #container, #footer
+    +zanshine-container
 
-#header, #footer
-  ul
-    +horizontal-list
+  #content
+    +column(18)
 
-#content
-  +column(18)
-
-#sidebar
-  +column(6, true)
+  #navigation
+    +column(6, true)
 
 
 //====================================================
@@ -110,9 +115,16 @@ $blueprint-font-size                  : 16px
 //
 //====================================================
 
-html, body
-  :color #222
-  :background-color #fffcfc
+=zanshine-colors
+  html, body
+    :color $main-color
+
+  #header, #navigation
+    h1, h2
+      :color $main-color-light
+      a
+        :color inherit
+
 
 //====================================================
 //
@@ -120,6 +132,32 @@ html, body
 //
 //====================================================
 
-.notice
-  +notice
+=zanshine-decoration
+  hr
+    :border 0px solid $main-color
+    :height 1px
+    :background-color $main-color
+  #header
+    h1, h2
+      a
+        &:hover
+          :text-decoration none
+  #navigation
+    ul
+      :padding-left 0
+      +no-bullet
+
+
+
+//====================================================
+//
+//	APPLY
+//
+//====================================================
+
++zanshine-reset
++zanshine-typography
++zanshine-layout
++zanshine-colors
++zanshine-decoration
 
