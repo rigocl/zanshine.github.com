@@ -227,7 +227,7 @@ a img {
 /* line 39, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body {
   line-height: 1.5;
-  font-family: georgia, serif;
+  font-family: Garamond, Palatino Linotype, Book Antiqua, Palatino, georgia, serif;
   color: #333333;
   font-size: 100%;
 }
@@ -460,7 +460,7 @@ caption {
   color: #111111;
 }
 
-/* line 82, ../_lib/sass/src/screen.sass */
+/* line 87, ../_lib/sass/src/screen.sass */
 a {
   color: #4183c4;
   text-decoration: none;
@@ -481,49 +481,49 @@ a:hover {
 a:active {
   color: #4183c4;
 }
-/* line 85, ../_lib/sass/src/screen.sass */
+/* line 90, ../_lib/sass/src/screen.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 88, ../_lib/sass/src/screen.sass */
+/* line 92, ../_lib/sass/src/screen.sass */
+#header {
+  font-size: 80%;
+  font-family: century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
+}
+/* line 95, ../_lib/sass/src/screen.sass */
 #header h1 a .title {
-  font-size: 120%;
-  font-weight: bolder;
+  font-size: 150%;
 }
 
-/* line 91, ../_lib/sass/src/screen.sass */
+/* line 99, ../_lib/sass/src/screen.sass */
 #author {
   font-size: 120%;
 }
 
-/* line 10, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%;
+/* line 102, ../_lib/sass/src/screen.sass */
+#credit {
+  font-family: century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
 }
 
-/* line 12, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 105, ../_lib/sass/src/screen.sass */
+#navigation {
+  font-family: century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
+}
+
+/* line 108, ../_lib/sass/src/screen.sass */
+#main-menu :first-letter {
+  text-transform: capitalize;
+}
+
+/* line 111, ../_lib/sass/src/screen.sass */
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 125, ../_lib/sass/src/screen.sass */
 #container {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -72px;
-}
-/* line 18, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#container #container-footer {
-  height: 72px;
-}
-
-/* line 20, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#footer {
-  clear: both;
-  position: relative;
-  height: 72px;
-}
-
-/* line 103, ../_lib/sass/src/screen.sass */
-#container, #footer {
   min-width: 950px;
   width: 80%;
   margin: 0 auto;
@@ -532,24 +532,32 @@ html, body {
   max-width: 1280px;
 }
 
-/* line 106, ../_lib/sass/src/screen.sass */
+/* line 128, ../_lib/sass/src/screen.sass */
 #container {
-  margin-top: 2em;
+  margin-top: 5%;
 }
 
-/* line 109, ../_lib/sass/src/screen.sass */
+/* line 132, ../_lib/sass/src/screen.sass */
 #container-footer {
   clear: both;
 }
 
-/* line 112, ../_lib/sass/src/screen.sass */
+/* line 136, ../_lib/sass/src/screen.sass */
 #footer ul {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 70.511%;
+  margin-right: 1.042%;
+  padding-right: 4.209%;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   overflow: hidden;
   *zoom: 1;
+  margin-top: 1em;
+  padding-bottom: 1em;
 }
 /* line 51, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
 #footer ul li {
@@ -571,16 +579,17 @@ html, body {
   padding-right: 0px;
 }
 
-/* line 115, ../_lib/sass/src/screen.sass */
+/* line 143, ../_lib/sass/src/screen.sass */
 #content, #page-title {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 74.72%;
+  width: 70.511%;
   margin-right: 1.042%;
+  padding-right: 4.209%;
 }
 
-/* line 118, ../_lib/sass/src/screen.sass */
+/* line 146, ../_lib/sass/src/screen.sass */
 #navigation, #author {
   display: inline;
   float: left;
@@ -589,63 +598,73 @@ html, body {
   margin-right: 0;
 }
 
-/* line 122, ../_lib/sass/src/screen.sass */
+/* line 149, ../_lib/sass/src/screen.sass */
+#header {
+  margin-right: 10%;
+}
+/* line 151, ../_lib/sass/src/screen.sass */
 #header h1 {
   height: 2em;
   float: right;
-  margin-right: 10%;
 }
 
-/* line 127, ../_lib/sass/src/screen.sass */
+/* line 155, ../_lib/sass/src/screen.sass */
 #credit {
   position: relative;
   height: 10em;
+  margin-bottom: 5em;
 }
 
-/* line 131, ../_lib/sass/src/screen.sass */
+/* line 160, ../_lib/sass/src/screen.sass */
 #page-title, #author {
   position: absolute;
   bottom: 0;
   margin-bottom: 0;
 }
 
-/* line 136, ../_lib/sass/src/screen.sass */
+/* line 165, ../_lib/sass/src/screen.sass */
 #author {
   right: 0;
 }
 
-/* line 148, ../_lib/sass/src/screen.sass */
+/* line 177, ../_lib/sass/src/screen.sass */
 html, body {
   color: #222222;
 }
 
-/* line 151, ../_lib/sass/src/screen.sass */
+/* line 180, ../_lib/sass/src/screen.sass */
 h1, h2 {
   color: inherit;
 }
 
-/* line 154, ../_lib/sass/src/screen.sass */
+/* line 183, ../_lib/sass/src/screen.sass */
 #header, #author {
   color: #aaaaaa;
 }
-/* line 156, ../_lib/sass/src/screen.sass */
+/* line 185, ../_lib/sass/src/screen.sass */
 #header a, #author a {
   color: inherit;
 }
 
-/* line 167, ../_lib/sass/src/screen.sass */
+/* line 188, ../_lib/sass/src/screen.sass */
+hr {
+  background-color: #aaaaaa;
+}
+
+/* line 198, ../_lib/sass/src/screen.sass */
 hr {
   border: 0px solid #222222;
   height: 1px;
-  background-color: #222222;
+  width: 60%;
+  margin-left: 20%;
 }
 
-/* line 174, ../_lib/sass/src/screen.sass */
+/* line 206, ../_lib/sass/src/screen.sass */
 #header h1 a:hover, #header h2 a:hover {
   text-decoration: none;
 }
 
-/* line 177, ../_lib/sass/src/screen.sass */
+/* line 209, ../_lib/sass/src/screen.sass */
 #navigation ul {
   padding-left: 0;
   list-style-image: none;
