@@ -103,15 +103,39 @@ $alternate-color-light                : #222
   #container, #footer
     +zanshine-container
 
+  #container
+    :margin-top 2em
+
+  #container-footer
+    :clear both
+
+  #footer ul
+    +horizontal-list
+
   #content, #page-title
     +column($content-columns-width)
 
   #navigation, #author
     +column($sidebar-columns-width, true)
 
-  #header h1
-    :float right
-    :margin-right 10%
+  #header
+    h1
+      :height 2em
+      :float right
+      :margin-right 10%
+
+  #credit
+    :position relative
+    :height 10em
+
+  #page-title, #author
+    :position absolute
+    :bottom 0
+    :margin-bottom 0
+
+  #author
+    :right 0
+
 
 
 //====================================================

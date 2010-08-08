@@ -533,6 +533,45 @@ html, body {
 }
 
 /* line 106, ../_lib/sass/src/screen.sass */
+#container {
+  margin-top: 2em;
+}
+
+/* line 109, ../_lib/sass/src/screen.sass */
+#container-footer {
+  clear: both;
+}
+
+/* line 112, ../_lib/sass/src/screen.sass */
+#footer ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 51, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 43, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#footer ul li:first-child, #footer ul li.first {
+  padding-left: 0px;
+}
+/* line 44, ../../../../.gem/ruby/1.8/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#footer ul li:last-child, #footer ul li.last {
+  padding-right: 0px;
+}
+
+/* line 115, ../_lib/sass/src/screen.sass */
 #content, #page-title {
   display: inline;
   float: left;
@@ -541,7 +580,7 @@ html, body {
   margin-right: 1.042%;
 }
 
-/* line 109, ../_lib/sass/src/screen.sass */
+/* line 118, ../_lib/sass/src/screen.sass */
 #navigation, #author {
   display: inline;
   float: left;
@@ -550,44 +589,63 @@ html, body {
   margin-right: 0;
 }
 
-/* line 112, ../_lib/sass/src/screen.sass */
+/* line 122, ../_lib/sass/src/screen.sass */
 #header h1 {
+  height: 2em;
   float: right;
   margin-right: 10%;
 }
 
-/* line 124, ../_lib/sass/src/screen.sass */
+/* line 127, ../_lib/sass/src/screen.sass */
+#credit {
+  position: relative;
+  height: 10em;
+}
+
+/* line 131, ../_lib/sass/src/screen.sass */
+#page-title, #author {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 136, ../_lib/sass/src/screen.sass */
+#author {
+  right: 0;
+}
+
+/* line 148, ../_lib/sass/src/screen.sass */
 html, body {
   color: #222222;
 }
 
-/* line 127, ../_lib/sass/src/screen.sass */
+/* line 151, ../_lib/sass/src/screen.sass */
 h1, h2 {
   color: inherit;
 }
 
-/* line 130, ../_lib/sass/src/screen.sass */
+/* line 154, ../_lib/sass/src/screen.sass */
 #header, #author {
   color: #aaaaaa;
 }
-/* line 132, ../_lib/sass/src/screen.sass */
+/* line 156, ../_lib/sass/src/screen.sass */
 #header a, #author a {
   color: inherit;
 }
 
-/* line 143, ../_lib/sass/src/screen.sass */
+/* line 167, ../_lib/sass/src/screen.sass */
 hr {
   border: 0px solid #222222;
   height: 1px;
   background-color: #222222;
 }
 
-/* line 150, ../_lib/sass/src/screen.sass */
+/* line 174, ../_lib/sass/src/screen.sass */
 #header h1 a:hover, #header h2 a:hover {
   text-decoration: none;
 }
 
-/* line 153, ../_lib/sass/src/screen.sass */
+/* line 177, ../_lib/sass/src/screen.sass */
 #navigation ul {
   padding-left: 0;
   list-style-image: none;
