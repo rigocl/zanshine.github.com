@@ -8,6 +8,7 @@ description: "This blog is mainly a laboratory where I experiment about various 
 short_description: "A blog about software development"
 
 
-theme: plain
-permalink: /blog/stephane-richard/:categories/:year-:month-:day/:title.htm
+theme:          plain
+permalink:      /blog/stephane-richard/:categories/:year-:month-:day/:title.htm
+pygments:       true
 
