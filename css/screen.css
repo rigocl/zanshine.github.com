@@ -677,18 +677,22 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   background-color: #aaaaaa; }
 
-/* line 215, ../_lib/sass/src/screen.sass */
+/* line 208, ../_lib/sass/src/screen.sass */
+blockquote, del {
+  color: #aaaaaa; }
+
+/* line 217, ../_lib/sass/src/screen.sass */
 hr {
   border: 0px solid #eeeeee;
   height: 1px;
   width: 60%;
   margin-left: 20%; }
 
-/* line 223, ../_lib/sass/src/screen.sass */
+/* line 225, ../_lib/sass/src/screen.sass */
 #header h1 a:hover, #header h2 a:hover {
   text-decoration: none; }
 
-/* line 226, ../_lib/sass/src/screen.sass */
+/* line 228, ../_lib/sass/src/screen.sass */
 #navigation ul {
   padding-left: 0;
   list-style-image: none;
