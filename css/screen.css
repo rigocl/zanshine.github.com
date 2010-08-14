@@ -531,37 +531,38 @@ a {
     font-weight: normal; }
   /* line 102, ../_lib/sass/src/screen.sass */
   #header h1 a em {
-    font-size: 50%; }
+    font-size: 50%;
+    display: inline-block; }
 
-/* line 104, ../_lib/sass/src/screen.sass */
+/* line 105, ../_lib/sass/src/screen.sass */
 #author {
   font-size: 120%; }
 
-/* line 107, ../_lib/sass/src/screen.sass */
+/* line 108, ../_lib/sass/src/screen.sass */
 #credit {
   font-family: QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif; }
 
-/* line 110, ../_lib/sass/src/screen.sass */
+/* line 111, ../_lib/sass/src/screen.sass */
 #navigation {
   font-family: QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
   font-size: 105%;
   font-weight: bold;
   text-transform: uppercase; }
 
-/* line 117, ../_lib/sass/src/screen.sass */
+/* line 118, ../_lib/sass/src/screen.sass */
 #navigation, #content {
   margin-top: 5em; }
 
-/* line 120, ../_lib/sass/src/screen.sass */
+/* line 121, ../_lib/sass/src/screen.sass */
 #main-menu :first-letter {
   text-transform: capitalize; }
 
-/* line 123, ../_lib/sass/src/screen.sass */
+/* line 124, ../_lib/sass/src/screen.sass */
 hr {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-/* line 137, ../_lib/sass/src/screen.sass */
+/* line 138, ../_lib/sass/src/screen.sass */
 #container {
   min-width: 800px;
   width: 75%;
@@ -570,15 +571,15 @@ hr {
   *zoom: 1;
   max-width: 1280px; }
 
-/* line 140, ../_lib/sass/src/screen.sass */
+/* line 141, ../_lib/sass/src/screen.sass */
 #container {
   margin-top: 5%; }
 
-/* line 144, ../_lib/sass/src/screen.sass */
+/* line 145, ../_lib/sass/src/screen.sass */
 #container-footer {
   clear: both; }
 
-/* line 148, ../_lib/sass/src/screen.sass */
+/* line 149, ../_lib/sass/src/screen.sass */
 #footer ul {
   display: inline;
   float: left;
@@ -611,7 +612,7 @@ hr {
     #footer ul li:last-child, #footer ul li.last {
       padding-right: 0px; }
 
-/* line 155, ../_lib/sass/src/screen.sass */
+/* line 156, ../_lib/sass/src/screen.sass */
 #content, #page-title {
   display: inline;
   float: left;
@@ -620,7 +621,7 @@ hr {
   margin-right: 1.042%;
   padding-right: 4.209%; }
 
-/* line 158, ../_lib/sass/src/screen.sass */
+/* line 159, ../_lib/sass/src/screen.sass */
 #navigation, #author {
   display: inline;
   float: left;
@@ -628,67 +629,66 @@ hr {
   width: 24.212%;
   margin-right: 0; }
 
-/* line 161, ../_lib/sass/src/screen.sass */
+/* line 162, ../_lib/sass/src/screen.sass */
 #header {
-  height: 2em; }
-  /* line 163, ../_lib/sass/src/screen.sass */
+  height: 3em; }
+  /* line 164, ../_lib/sass/src/screen.sass */
   #header h1 {
     width: 50%;
     margin-right: 10%;
     float: right; }
 
-/* line 168, ../_lib/sass/src/screen.sass */
+/* line 169, ../_lib/sass/src/screen.sass */
 #credit {
   position: relative;
-  height: 10em;
-  width: 100%; }
+  height: 10em; }
 
-/* line 174, ../_lib/sass/src/screen.sass */
+/* line 173, ../_lib/sass/src/screen.sass */
 #page-title, #author {
   position: absolute;
   bottom: 0;
   margin-bottom: 0; }
 
-/* line 179, ../_lib/sass/src/screen.sass */
+/* line 178, ../_lib/sass/src/screen.sass */
 #author {
   right: 0; }
 
-/* line 191, ../_lib/sass/src/screen.sass */
+/* line 190, ../_lib/sass/src/screen.sass */
 html, body {
   color: #eeeeee;
   background-color: #444444; }
 
-/* line 195, ../_lib/sass/src/screen.sass */
+/* line 194, ../_lib/sass/src/screen.sass */
 h1, h2, h3, h4, h5, h6 {
   color: inherit; }
 
-/* line 198, ../_lib/sass/src/screen.sass */
+/* line 197, ../_lib/sass/src/screen.sass */
 #header, #author {
   color: #aaaaaa; }
-  /* line 200, ../_lib/sass/src/screen.sass */
+  /* line 199, ../_lib/sass/src/screen.sass */
   #header a, #author a {
     color: inherit; }
 
-/* line 203, ../_lib/sass/src/screen.sass */
+/* line 202, ../_lib/sass/src/screen.sass */
 #page-title {
   color: white; }
 
-/* line 206, ../_lib/sass/src/screen.sass */
+/* line 205, ../_lib/sass/src/screen.sass */
 hr {
   background-color: #aaaaaa; }
 
-/* line 216, ../_lib/sass/src/screen.sass */
+/* line 215, ../_lib/sass/src/screen.sass */
 hr {
   border: 0px solid #eeeeee;
   height: 1px;
   width: 60%;
   margin-left: 20%; }
 
-/* line 224, ../_lib/sass/src/screen.sass */
+/* line 223, ../_lib/sass/src/screen.sass */
 #header h1 a:hover, #header h2 a:hover {
   text-decoration: none; }
 
-/* line 227, ../_lib/sass/src/screen.sass */
+/* line 226, ../_lib/sass/src/screen.sass */
 #navigation ul {
   padding-left: 0;
   list-style-image: none;
