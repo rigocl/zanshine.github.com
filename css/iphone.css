@@ -1,5 +1,6 @@
 /* line 1, ../_lib/sass/src/iphone.sass */
 #container {
-  width: 100%;
+  width: 480px;
   min-width: 0px;
   max-width: 480px; }
+

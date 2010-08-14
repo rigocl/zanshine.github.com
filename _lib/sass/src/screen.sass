@@ -24,8 +24,8 @@
 
 //Layout
 $blueprint-liquid-grid-columns        : 24
-$blueprint-liquid-container-width     : 80%
-$blueprint-liquid-container-min-width : 950px
+$blueprint-liquid-container-width     : 75%
+$blueprint-liquid-container-min-width : 800px
 $content-columns-width                : 18
 $sidebar-columns-width                : $blueprint-liquid-grid-columns - $content-columns-width
 
@@ -36,20 +36,20 @@ $fixed-font-family                    : TeXGyreCursorRegular, lucida console, mo
 
 $blueprint-font-family                : $main-font-family
 $blueprint-fixed-font-family          : $fixed-font-family
-$blueprint-font-size                  : 16px
+$blueprint-font-size                  : 12px
 
 //Colors
-$main-color                           : #222
-$main-color-strong                    : #000
+$main-color                           : #eee
+$main-color-strong                    : #fff
 $main-color-light                     : #aaa
 
 $secondary-color                      : #4183C4
 $secondary-color-strong               : #C3D9FF
 $secondary-color-light                : #eee
 
-$alternate-color                      : #222
-$alternate-color-strong               : #222
-$alternate-color-light                : #222
+$background-color                     : #444
+$background-color-strong              : #222
+$background-color-light               : #aaa
 
 //====================================================
 //
@@ -85,6 +85,8 @@ $alternate-color-light                : #222
 //====================================================
 
 =zanshine-typography
+  html, body
+    :font-size large
   +blueprint-typography
   a
     +link-colors($secondary-color, $secondary-color, $secondary-color, $secondary-color, $secondary-color)
@@ -92,12 +94,13 @@ $alternate-color-light                : #222
     &:hover
       :text-decoration underline
   #header
-    :font-size 80%
+    :font-size 150%
     :font-family $alternate-font-family
-    h1 a .title
-      :font
-        :size 150%
-        //:weight bolder
+    h1 a
+      strong
+        :font-weight normal
+      em
+        :font-size 50%
   #author
     :font-size 120%
 
@@ -105,7 +108,14 @@ $alternate-color-light                : #222
     :font-family $alternate-font-family
 
   #navigation
-    :font-family $alternate-font-family
+    :font
+      :family $alternate-font-family
+      :size 105%
+      :weight bold
+    :text-transform uppercase
+
+  #navigation, #content
+    :margin-top 5em
 
   #main-menu :first-letter
     :text-transform capitalize
@@ -149,15 +159,17 @@ $alternate-color-light                : #222
     +left-column
 
   #header
-    :margin-right 10%
+    :height 2em
     h1
-      :height 2em
+      :width 50%
+      :margin-right 10%
       :float right
 
   #credit
     :position relative
     :height 10em
-    :margin-bottom 5em
+    :width 100%
+    //:margin-bottom 5em
 
   #page-title, #author
     :position absolute
@@ -178,14 +190,18 @@ $alternate-color-light                : #222
 =zanshine-colors
   html, body
     :color $main-color
+    :background-color $background-color
 
-  h1, h2
+  h1, h2, h3, h4, h5, h6
     :color inherit
 
   #header, #author
     :color $main-color-light
     a
       :color inherit
+
+  #page-title
+    :color $main-color-strong
 
   hr
     :background-color $main-color-light
