@@ -12,3 +12,6 @@ theme:          plain
 permalink:      /blog/stephane-richard/:categories/:year-:month-:day/:title.htm
 pygments:       true
 
+exclude:
+  robots.txt
+
