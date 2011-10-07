@@ -134,7 +134,7 @@ $background-color-light               : #aaa
 //====================================================
 
 =zanshine-layout
-  //+sticky-footer(4em, "#container", "#container-footer", "#footer")
+  //+sticky-footer(4em, "#container", "#footer-container", "#footer")
   #container
     +zanshine-container
 
@@ -146,6 +146,7 @@ $background-color-light               : #aaa
     :clear both
 
   #footer
+    :margin-top 4em
     ul
       +right-column
       +horizontal-list
@@ -178,6 +179,9 @@ $background-color-light               : #aaa
   #author
     :right 0
 
+  #content #disqus_thread
+    :margin
+      :top 5em
 
 
 //====================================================
