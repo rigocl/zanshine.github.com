@@ -1,1 +1,653 @@
-html,body{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}html{font-size:100.01%}div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,code,del,dfn,em,img,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,tr{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}blockquote,q{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;quotes:"" ""}blockquote:before,blockquote:after,q:before,q:after{content:""}th,td,caption{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;text-align:left;font-weight:normal;vertical-align:middle}table{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;border-collapse:separate;border-spacing:0;vertical-align:middle}a img{border:none}@font-face{font-family:"QuicksandLight";src:url("/fonts/Quicksand/Quicksand_Light-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Light-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Light-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Light-webfont.svg#webfontoB19sJmp") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"QuicksandLightOblique";src:url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.svg#webfontwNw9na0X") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"QuicksandBook";src:url("/fonts/Quicksand/Quicksand_Book-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Book-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Book-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Book-webfont.svg#webfontql8zHAcQ") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"QuicksandBookOblique";src:url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.svg#webfontqWZhPKF9") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"QuicksandBold";src:url("/fonts/Quicksand/Quicksand_Bold-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Bold-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Bold-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Bold-webfont.svg#webfontq6ANw9di") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"QuicksandBoldOblique";src:url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.eot");src:local("☺"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.svg#webfont8jlhnZiL") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyreCursorRegular";src:url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.svg#webfont758O8qUk") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyreCursorItalic";src:url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.svg#webfontab58YZG3") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyreCursorBold";src:url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.svg#webfontSkvuzeKs") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyreCursorBoldItalic";src:url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.svg#webfont91JOFHuh") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyrePagellaRegular";src:url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.svg#webfontsQnZdaHd") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyrePagellaItalic";src:url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.svg#webfontmyJbZXWg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyrePagellaBold";src:url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.svg#webfontJ1aqwRAw") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"TeXGyrePagellaBoldItalic";src:url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.eot");src:local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.svg#webfontI4fhKdB5") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:"DejaVuSerifBook";src:url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.eot");src:local("☺"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.woff") format("woff"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.ttf") format("truetype"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.svg#webfontgRAI6HZ7") format("svg");font-weight:normal;font-style:normal}html,body{font-size:large}body{line-height:1.5;font-family:DejaVuSerifBook, Garamond, Palatino Linotype, Book Antiqua, Palatino, georgia, serif;color:#333333;font-size:75%}h1,h2,h3,h4,h5,h6{font-weight:normal;color:#222}h1 img,h2 img,h3 img,h4 img,h5 img,h6 img{margin:0}h1{font-size:3em;line-height:1;margin-bottom:0.50em}h2{font-size:2em;margin-bottom:0.75em}h3{font-size:1.5em;line-height:1;margin-bottom:1.00em}h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em}h5{font-size:1em;font-weight:bold;margin-bottom:1.50em}h6{font-size:1em;font-weight:bold}p{margin:0 0 1.5em}p img.left{display:inline;float:left;margin:1.5em 1.5em 1.5em 0;padding:0}p img.right{display:inline;float:right;margin:1.5em 0 1.5em 1.5em;padding:0}a{text-decoration:underline;color:#000099}a:visited{color:#006}a:focus{color:black}a:hover{color:black}a:active{color:#c09}blockquote{margin:1.5em;color:#666666;font-style:italic}strong{font-weight:bold}em{font-style:italic}dfn{font-style:italic;font-weight:bold}sup,sub{line-height:0}abbr,acronym{border-bottom:1px dotted #666666}address{margin:0 0 1.5em;font-style:italic}del{color:#666666}pre{margin:1.5em 0;white-space:pre}pre,code,tt{font:1em TeXGyreCursorRegular, lucida console, monaco, monospace;line-height:1.5}li ul,li ol{margin:0}ul,ol{margin:0 1.5em 1.5em 0;padding-left:3.333em}ul{list-style-type:disc}ol{list-style-type:decimal}dl{margin:0 0 1.5em 0}dl dt{font-weight:bold}dd{margin-left:1.5em}table{margin-bottom:1.4em;width:100%}th{font-weight:bold}thead th{background:#c3d9ff}th,td,caption{padding:4px 10px 4px 5px}tr.even td{background:#e5ecf9}tfoot{font-style:italic}caption{background:#eeeeee}.quiet{color:#666}.loud{color:#111}a{color:#4183c4;text-decoration:none}a:visited{color:#4183c4}a:focus{color:#4183c4}a:hover{color:#4183c4}a:active{color:#4183c4}a:hover{text-decoration:underline}#header{font-size:150%;font-family:QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif}#header h1 a strong{font-weight:normal}#header h1 a em{font-size:50%;display:inline-block}#author{font-size:120%}#credit{font-family:QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif}#navigation{font-family:QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;font-size:105%;font-weight:bold;text-transform:uppercase}#navigation,#content{margin-top:5em}#main-menu :first-letter{text-transform:capitalize}hr{margin-top:1em;margin-bottom:1em}#container{min-width:800px;width:75%;margin:0 auto;overflow:hidden;*zoom:1;max-width:1280px}#container{margin-top:5%}#container-footer{clear:both}#footer ul{display:inline;float:left;overflow:hidden;width:70.511%;margin-right:1.042%;padding-right:4.209%;margin:0;padding:0;border:0;outline:0;overflow:hidden;*zoom:1;margin-top:1em;padding-bottom:1em}#footer ul li{list-style-image:none;list-style-type:none;margin-left:0px;white-space:nowrap;display:inline;float:left;padding-left:4px;padding-right:4px}#footer ul li:first-child,#footer ul li.first{padding-left:0px}#footer ul li:last-child,#footer ul li.last{padding-right:0px}#content,#page-title{display:inline;float:left;overflow:hidden;width:70.511%;margin-right:1.042%;padding-right:4.209%}#navigation,#author{display:inline;float:left;overflow:hidden;width:24.212%;margin-right:0}#header{height:3em}#header h1{width:50%;margin-right:10%;float:right}#credit{position:relative;height:10em}#page-title,#author{position:absolute;bottom:0;margin-bottom:0}#author{right:0}html,body{color:#eee;background-color:#444}h1,h2,h3,h4,h5,h6{color:inherit}#header,#author{color:#aaa}#header a,#author a{color:inherit}#page-title{color:#fff}hr{background-color:#aaa}blockquote,del{color:#aaa}hr{border:0px solid #eee;height:1px;width:60%;margin-left:20%}#header h1 a:hover,#header h2 a:hover{text-decoration:none}#navigation ul{padding-left:0;list-style-image:none;list-style-type:none;margin-left:0px}
+/* line 4, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 18, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 67, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 22, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  float: none !important;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+@font-face {
+  font-family: "QuicksandLight";
+  src: url("/fonts/Quicksand/Quicksand_Light-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Light-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Light-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Light-webfont.svg#webfontoB19sJmp") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuicksandLightOblique";
+  src: url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Light_Oblique-webfont.svg#webfontwNw9na0X") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuicksandBook";
+  src: url("/fonts/Quicksand/Quicksand_Book-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Book-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Book-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Book-webfont.svg#webfontql8zHAcQ") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuicksandBookOblique";
+  src: url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Book_Oblique-webfont.svg#webfontqWZhPKF9") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuicksandBold";
+  src: url("/fonts/Quicksand/Quicksand_Bold-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Bold-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Bold-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Bold-webfont.svg#webfontq6ANw9di") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuicksandBoldOblique";
+  src: url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.eot");
+  src: local("☺"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.woff") format("woff"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.ttf") format("truetype"), url("/fonts/Quicksand/Quicksand_Bold_Oblique-webfont.svg#webfont8jlhnZiL") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyreCursorRegular";
+  src: url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-regular-webfont.svg#webfont758O8qUk") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyreCursorItalic";
+  src: url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-italic-webfont.svg#webfontab58YZG3") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyreCursorBold";
+  src: url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bold-webfont.svg#webfontSkvuzeKs") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyreCursorBoldItalic";
+  src: url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Cursor/texgyrecursor-bolditalic-webfont.svg#webfont91JOFHuh") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyrePagellaRegular";
+  src: url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-regular-webfont.svg#webfontsQnZdaHd") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyrePagellaItalic";
+  src: url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-italic-webfont.svg#webfontmyJbZXWg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyrePagellaBold";
+  src: url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bold-webfont.svg#webfontJ1aqwRAw") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeXGyrePagellaBoldItalic";
+  src: url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.eot");
+  src: local("☺"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.woff") format("woff"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.ttf") format("truetype"), url("/fonts/TeX-Gyre-Pagella/texgyrepagella-bolditalic-webfont.svg#webfontI4fhKdB5") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DejaVuSerifBook";
+  src: url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.eot");
+  src: local("☺"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.woff") format("woff"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.ttf") format("truetype"), url("/fonts/DejaVu-Serif/DejaVuSerif-webfont.svg#webfontgRAI6HZ7") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 88, ../_lib/sass/src/screen.sass */
+html, body {
+  font-size: large;
+}
+
+/* line 33, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+body {
+  line-height: 1.5;
+  font-family: DejaVuSerifBook, Garamond, Palatino Linotype, Book Antiqua, Palatino, georgia, serif;
+  color: #333333;
+  font-size: 75%;
+}
+
+/* line 51, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #222222;
+}
+/* line 52, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* line 53, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+
+/* line 54, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* line 55, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+
+/* line 56, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+/* line 57, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+
+/* line 58, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 59, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+p {
+  margin: 0 0 1.5em;
+}
+/* line 60, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+p .left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+/* line 61, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+p .right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+
+/* line 62, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+a {
+  text-decoration: underline;
+  color: #0066cc;
+}
+/* line 18, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #004c99;
+}
+/* line 21, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #0099ff;
+}
+/* line 24, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #0099ff;
+}
+/* line 27, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #bf00ff;
+}
+
+/* line 63, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+
+/* line 64, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+strong, dfn {
+  font-weight: bold;
+}
+
+/* line 65, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 66, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+sup, sub {
+  line-height: 0;
+}
+
+/* line 67, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666666;
+}
+
+/* line 68, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+/* line 69, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+del {
+  color: #666666;
+}
+
+/* line 70, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+/* line 71, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+pre, code, tt {
+  font: 1em TeXGyreCursorRegular, lucida console, monaco, monospace;
+  line-height: 1.5;
+}
+
+/* line 72, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+li ul, li ol {
+  margin: 0;
+}
+
+/* line 73, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+/* line 74, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 75, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 76, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+dl {
+  margin: 0 0 1.5em 0;
+}
+/* line 77, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 78, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+dd {
+  margin-left: 1.5em;
+}
+
+/* line 79, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+/* line 80, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 81, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+thead th {
+  background: #c3d9ff;
+}
+
+/* line 82, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 85, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+table.striped tr:nth-child(even) td,
+table tr.even td {
+  background: #e5ecf9;
+}
+
+/* line 86, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+tfoot {
+  font-style: italic;
+}
+
+/* line 87, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+caption {
+  background: #eeeeee;
+}
+
+/* line 88, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+.quiet {
+  color: #666666;
+}
+
+/* line 89, ../../../.gem/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+.loud {
+  color: #111111;
+}
+
+/* line 91, ../_lib/sass/src/screen.sass */
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+/* line 18, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #4183c4;
+}
+/* line 21, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #4183c4;
+}
+/* line 24, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #4183c4;
+}
+/* line 27, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #4183c4;
+}
+/* line 94, ../_lib/sass/src/screen.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 96, ../_lib/sass/src/screen.sass */
+#header {
+  font-size: 150%;
+  font-family: QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
+}
+/* line 100, ../_lib/sass/src/screen.sass */
+#header h1 a strong {
+  font-weight: normal;
+}
+/* line 102, ../_lib/sass/src/screen.sass */
+#header h1 a em {
+  font-size: 30%;
+  display: block;
+}
+
+/* line 105, ../_lib/sass/src/screen.sass */
+#author {
+  font-size: 120%;
+}
+
+/* line 108, ../_lib/sass/src/screen.sass */
+#credit {
+  font-family: QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
+}
+
+/* line 111, ../_lib/sass/src/screen.sass */
+#navigation {
+  font-family: QuicksandBook, century gothic, Trebuchet MS, lucida sans unicode, Lucida Grande, sans-serif;
+  font-size: 105%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 118, ../_lib/sass/src/screen.sass */
+#navigation, #content {
+  margin-top: 5em;
+}
+
+/* line 121, ../_lib/sass/src/screen.sass */
+#main-menu :first-letter {
+  text-transform: capitalize;
+}
+
+/* line 124, ../_lib/sass/src/screen.sass */
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 138, ../_lib/sass/src/screen.sass */
+#container {
+  min-width: 960px;
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1280px;
+}
+
+/* line 141, ../_lib/sass/src/screen.sass */
+#container {
+  margin-top: 5%;
+}
+
+/* line 145, ../_lib/sass/src/screen.sass */
+#container-footer {
+  clear: both;
+}
+
+/* line 149, ../_lib/sass/src/screen.sass */
+#footer ul {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 70.511%;
+  margin-right: 1.042%;
+  padding-right: 4.209%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+/* line 60, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li:first-child, #footer ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../.gem/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+#footer ul li.last {
+  padding-right: 0;
+}
+
+/* line 156, ../_lib/sass/src/screen.sass */
+#content, #page-title {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 70.511%;
+  margin-right: 1.042%;
+  padding-right: 4.209%;
+}
+
+/* line 159, ../_lib/sass/src/screen.sass */
+#navigation, #author {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 24.212%;
+  margin-right: 0;
+}
+
+/* line 162, ../_lib/sass/src/screen.sass */
+#header {
+  height: 3em;
+}
+/* line 164, ../_lib/sass/src/screen.sass */
+#header h1 {
+  width: 50%;
+  margin-right: 10%;
+  float: right;
+}
+
+/* line 169, ../_lib/sass/src/screen.sass */
+#credit {
+  position: relative;
+  height: 10em;
+}
+
+/* line 173, ../_lib/sass/src/screen.sass */
+#page-title, #author {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 178, ../_lib/sass/src/screen.sass */
+#author {
+  right: 0;
+}
+
+/* line 190, ../_lib/sass/src/screen.sass */
+html, body {
+  color: #eeeeee;
+  background-color: #444444;
+}
+
+/* line 194, ../_lib/sass/src/screen.sass */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+}
+
+/* line 197, ../_lib/sass/src/screen.sass */
+#header, #author {
+  color: #aaaaaa;
+}
+/* line 199, ../_lib/sass/src/screen.sass */
+#header a, #author a {
+  color: inherit;
+}
+
+/* line 202, ../_lib/sass/src/screen.sass */
+#page-title {
+  color: white;
+}
+
+/* line 205, ../_lib/sass/src/screen.sass */
+hr {
+  background-color: #aaaaaa;
+}
+
+/* line 208, ../_lib/sass/src/screen.sass */
+blockquote, del {
+  color: #aaaaaa;
+}
+
+/* line 217, ../_lib/sass/src/screen.sass */
+hr {
+  border: 0px solid #eeeeee;
+  height: 1px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+/* line 225, ../_lib/sass/src/screen.sass */
+#header h1 a:hover, #header h2 a:hover {
+  text-decoration: none;
+}
+
+/* line 228, ../_lib/sass/src/screen.sass */
+#navigation ul {
+  padding-left: 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
