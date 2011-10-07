@@ -1,14 +1,16 @@
 {% for post in site.posts offset: 0 limit: 5 %}
 
   <div class="post">
-    <h3><a href="{{ post.url }}/">{{ post.title }}</a></h3>
+    <h3>
+      <a href="{{ post.url }}/">{{ post.title }}</a>
+    </h3>
     <p>
       <strong>{{ post.date | date_to_string }}</strong>
-      <em> <a href="{{ post.url }}">{{ post.topics }}</a> </em>
+      <a href="{{ post.url }}">{{ post.topics }}</a>
     </p>
     <p>
       {{ post.content | strip_html | truncatewords: 35 }} <br />
-      <a href="{{ post.url }}/">Read more</a>
+      » <a href="{{ post.url }}/">Read more</a>
     </p>
   </div>
 
