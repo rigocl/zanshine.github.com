@@ -3,5 +3,4 @@ layout: main
 title: Home
 ---
 
-This blog is under construction.
-
+{% include recent_posts.html %}

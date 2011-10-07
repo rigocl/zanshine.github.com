@@ -2,16 +2,18 @@
 author: "Stéphane R. Richard"
 email: "blog@zanshine.com"
 title: "zanshine"
-subtitle: "software development"
+subtitle: "computer graphics, music and software development"
 url: "http://zanshine.github.com"
 description: "This blog is mainly a laboratory where I experiment about various software development and software engineering topics I'm interested in, ranging from computer languages and design patterns to software architecture, software testing and correctness proving."
 short_description: "A blog about software development"
 
 
 theme:          plain
-permalink:      /blog/stephane-richard/:categories/:year-:month-:day/:title.htm
+permalink:      /blog/stephane-richard/:categories/:year-:month-:day/:title
 pygments:       true
 
 exclude:
   robots.txt
+
+redirects: yes
 
