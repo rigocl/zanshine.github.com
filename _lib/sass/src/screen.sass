@@ -108,17 +108,17 @@ $background-color-light               : #aaa
   #credit
     :font-family $alternate-font-family
 
-  #navigation
+  #sidebar
     :font
       :family $alternate-font-family
       :size 105%
       :weight bold
     :text-transform uppercase
 
-  #navigation, #content
+  #sidebar, #content
     :margin-top 5em
 
-  #main-menu :first-letter
+  .navigation :first-letter
     :text-transform capitalize
 
   hr
@@ -157,7 +157,7 @@ $background-color-light               : #aaa
   #content, #page-title
     +right-column
 
-  #navigation, #author
+  #sidebar, #author
     +left-column
 
   #header
@@ -228,7 +228,7 @@ $background-color-light               : #aaa
       a
         &:hover
           :text-decoration none
-  #navigation
+  #sidebar
     ul
       :padding-left 0
       +no-bullet
