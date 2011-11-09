@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Stéphane R. Richard - zanshine</title>
+ <link href="http://blog.zanshine.comatom.xml" rel="self"/>
+ <link href="http://blog.zanshine.com"/>
+ <updated>2011-11-09T12:21:17+01:00</updated>
+ <id>http://blog.zanshine.com</id>
+ <author>
+   <name>Stéphane R. Richard</name>
+   <email>blog@zanshine.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>The space turtle concept art</title>
+   <link href="http://blog.zanshine.com/blog/stephane-richard/portfolio/2011-11-09/space-turtle-concept-art"/>
+   <updated>2011-11-09T00:00:00+01:00</updated>
+   <id>http://blog.zanshine.com/blog/stephane-richard/portfolio/2011-11-09/space-turtle-concept-art</id>
+   <content type="html">&lt;p&gt;Sketched in Zbrush, painted in photoshop. Done in 6 hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://farm7.static.flickr.com/6113/6325813309_e381126b4d_b.jpg' alt='alt text' /&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Better late than never</title>
+   <link href="http://blog.zanshine.com/blog/stephane-richard/2011-10-06/better-late-than-never"/>
+   <updated>2011-10-06T00:00:00+02:00</updated>
+   <id>http://blog.zanshine.com/blog/stephane-richard/2011-10-06/better-late-than-never</id>
+   <content type="html">&lt;p&gt;For many years I&amp;#8217;ve tried to maintain a blog. Difficult thing, given the devouring passions that I live with, and unfortunately, writing is not among them.&lt;/p&gt;
+
+&lt;p&gt;But I felt the need to present them all in one place, so I&amp;#8217;ll try to make it in this blog.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Cutting edge gimp in latest ubuntu</title>
+   <link href="http://blog.zanshine.com/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu"/>
+   <updated>2011-10-05T00:00:00+02:00</updated>
+   <id>http://blog.zanshine.com/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu</id>
+   <content type="html">&lt;p&gt;If you want to run the latest development version of gimp (2.7.x) in ubuntu 11.10, here&amp;#8217;s how to achieve that in a few command lines.&lt;/p&gt;
+
+&lt;p&gt;Notes that the following has been tested successfully on Ubuntu 11.x fresh installed and updated systems.&lt;/p&gt;
+
+&lt;p&gt;You&amp;#8217;ll not be able to compil the current 2.7 gimp snapshot on lucid, as it require a higher version of glibc than the one included by the distribution. It&amp;#8217;s still possible to compil it on lucid, but if you know how to do that, you don&amp;#8217;t need me anymore :)&lt;/p&gt;
+
+&lt;p&gt;So, I&amp;#8217;ve wrote a little bash script to automate the process of compiling the gimp&amp;#8217;s latest development version and it&amp;#8217;s dependencies, which should work fine on a fresh Oneiric install.&lt;/p&gt;
+
+&lt;p&gt;Just download the script or clone the git repository, optionally, configure it, and run.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;#8217;t have the git command, you may install it. That will help you in keeping the script up to date:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo aptitude install git-core&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git://github.com/zanshine/gimp-razor.git
+cd gimp-razor
+./gimp-razor&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, if you don&amp;#8217;t wanna use git, you can download the script (&lt;a href='https://raw.github.com/zanshine/gimp-razor/master/gimp-razor'&gt;https://raw.github.com/zanshine/gimp-razor/master/gimp-razor)&lt;/a&gt;, make it executable and run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://raw.github.com/zanshine/gimp-razor/master/gimp-razor
+chmod u+x gimp-razor
+./gimp-razor&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;#8217;s it!&lt;/p&gt;
+
+&lt;p&gt;Out of the box, this script will retrieve the latest gimp sources and it&amp;#8217;s unmet dependencies on ubuntu 11.10, wich are gegl and babl.&lt;/p&gt;
+
+&lt;p&gt;It will compil gimp under &lt;code&gt;~/opt/gimp/build_$build_id&lt;/code&gt;, where $build_id is a simple timestamp. So you&amp;#8217;ll be able to make nightly builds if you want, without breaking the last ones. At the end of the process, your newly cutting edge gimp will be launched.&lt;/p&gt;
+
+&lt;p&gt;Please, report any issue you&amp;#8217;d have with the script, and I&amp;#8217;ll try to solve them quickly.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content=" " />
+    <title>Cutting edge gimp in latest ubuntu - zanshine (Stéphane R. Richard) - Stéphane R. Richard's website, cg artworks, music and software development</title>
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Zanshine.com ATOM Feed" />
+    <link rel="stylesheet" type="text/css" href="/css/print.css"  media="print" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen,projection" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/iphone.css" media="only screen and (max-device-width: 480px)" charset="utf-8" />
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" charset="utf-8" />
+    <![endif]-->
+  </head>
+  <body>
+    <a href="https://github.com/mojombo/jekyll" target="_blank"><img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" style="position: absolute; top: 0; right: 0; border: 0;" /></a>
+    <div id="container">
+
+      <!-- header -->
+      <div id="header" class="title">
+        <h1><a href="http://blog.zanshine.com"><strong class="title">zanshine</strong> <em>cg artwork, music and software development</em></a></h1>
+      </div>
+
+      <div id="credit">
+        <h2 id="page-title">Cutting edge gimp in latest ubuntu</h2>
+        <h2 id="author" class="author">by Stéphane R. Richard</h2>
+      </div>
+
+      <!-- body -->
+      <div id="content">
+        <p>If you want to run the latest development version of gimp (2.7.x) in ubuntu 11.10, here&#8217;s how to achieve that in a few command lines.</p>
+
+<p>Notes that the following has been tested successfully on Ubuntu 11.x fresh installed and updated systems.</p>
+
+<p>You&#8217;ll not be able to compil the current 2.7 gimp snapshot on lucid, as it require a higher version of glibc than the one included by the distribution. It&#8217;s still possible to compil it on lucid, but if you know how to do that, you don&#8217;t need me anymore :)</p>
+
+<p>So, I&#8217;ve wrote a little bash script to automate the process of compiling the gimp&#8217;s latest development version and it&#8217;s dependencies, which should work fine on a fresh Oneiric install.</p>
+
+<p>Just download the script or clone the git repository, optionally, configure it, and run.</p>
+
+<p>If you don&#8217;t have the git command, you may install it. That will help you in keeping the script up to date:</p>
+
+<pre><code>sudo aptitude install git-core</code></pre>
+
+<p>Then:</p>
+
+<pre><code>git clone git://github.com/zanshine/gimp-razor.git
+cd gimp-razor
+./gimp-razor</code></pre>
+
+<p>Alternatively, if you don&#8217;t wanna use git, you can download the script (<a href='https://raw.github.com/zanshine/gimp-razor/master/gimp-razor'>https://raw.github.com/zanshine/gimp-razor/master/gimp-razor)</a>, make it executable and run:</p>
+
+<pre><code>wget https://raw.github.com/zanshine/gimp-razor/master/gimp-razor
+chmod u+x gimp-razor
+./gimp-razor</code></pre>
+
+<p>That&#8217;s it!</p>
+
+<p>Out of the box, this script will retrieve the latest gimp sources and it&#8217;s unmet dependencies on ubuntu 11.10, wich are gegl and babl.</p>
+
+<p>It will compil gimp under <code>~/opt/gimp/build_$build_id</code>, where $build_id is a simple timestamp. So you&#8217;ll be able to make nightly builds if you want, without breaking the last ones. At the end of the process, your newly cutting edge gimp will be launched.</p>
+
+<p>Please, report any issue you&#8217;d have with the script, and I&#8217;ll try to solve them quickly.</p>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'zanshineblog'; // required: replace example with your forum shortname
+    var disqus_developer = 0;
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+      </div>
+
+      <!-- navigation -->
+      <div id="sidebar">
+        <ul class="navigation">
+  <li>
+    <a href="/portfolio.html">Portfolio</a>
+  </li>
+  <li>
+    <a href="http://www.noomiz.com/srpercussions" target="_blank">Music</a>
+  </li>
+  <li>
+    <a href="https://github.com/zanshine" target="_blank">Software</a>
+  </li>
+  <li>
+    <a href="/index.html">Blog</a>
+  </li>
+  <li>
+    <a href="/about.html">About</a>
+  </li>
+</ul>
+
+
+      </div>
+
+      <!-- footer -->
+      <div id="footer-container"></div>
+    
+    <!--<div>-->
+
+    <div id="footer">
+      <ul class="navigation">
+  <li>
+    <a href="/portfolio.html">Portfolio</a>
+  </li>
+  <li>
+    <a href="http://www.noomiz.com/srpercussions" target="_blank">Music</a>
+  </li>
+  <li>
+    <a href="https://github.com/zanshine" target="_blank">Software</a>
+  </li>
+  <li>
+    <a href="/index.html">Blog</a>
+  </li>
+  <li>
+    <a href="/about.html">About</a>
+  </li>
+</ul>
+
+
+    </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12281331-1']);
+  _gaq.push(['_setDomainName', 'zanshine.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>
+
