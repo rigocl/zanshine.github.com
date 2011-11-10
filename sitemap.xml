@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://blog.zanshine.com/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu
+        </loc>
+        <lastmod>2011-11-10T14:29:54+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://blog.zanshine.com/blog/stephane-richard/2011-10-06/better-late-than-never
+        </loc>
+        <lastmod>2011-11-10T14:29:54+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://blog.zanshine.com/blog/stephane-richard/artwork/2011-11-09/space-turtle-concept-art
+        </loc>
+        <lastmod>2011-11-10T16:24:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.zanshine.com/portfolio.html</loc>
+        <lastmod>2011-11-10T16:23:33+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.zanshine.com/about.html</loc>
+        <lastmod>2011-11-10T14:29:54+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.zanshine.com/typo.html</loc>
+        <lastmod>2011-11-10T14:29:54+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.zanshine.com/</loc>
+        <lastmod>2011-11-10T14:29:54+01:00</lastmod>
+    </url>
+</urlset>
