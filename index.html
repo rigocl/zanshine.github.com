@@ -31,10 +31,10 @@
       <div id="content"> 
         <div class='post color-1'>
     <h3>
-      <a href='/blog/stephane-richard/artwork/2011-11-09/space-turtle-concept-art/' class='title'>The space turtle concept art</a>
+      <a class='title' href='/blog/stephane-richard/artwork/2011-11-09/space-turtle-concept-art/'>The space turtle concept art</a>
     </h3>
     
-    <a href='/blog/stephane-richard/artwork/2011-11-09/space-turtle-concept-art/' class='artwork'><img class='colorize' title='The space turtle concept art' src='/images/thumb/space_turtle_croped.png' alt='The space turtle concept art' /></a>
+    <a class='artwork' href='/blog/stephane-richard/artwork/2011-11-09/space-turtle-concept-art/'><img alt='The space turtle concept art' src='/images/thumb/space_turtle_croped.png' title='The space turtle concept art' /></a>
 
     <div class='abstract'>
       <p class='date'>09 Nov 2011</p>
@@ -46,10 +46,10 @@
 
   </div><div class='post color-2'>
     <h3>
-      <a href='/blog/stephane-richard/2011-10-06/better-late-than-never/' class='title'>Better late than never</a>
+      <a class='title' href='/blog/stephane-richard/2011-10-06/better-late-than-never/'>Better late than never</a>
     </h3>
     
-    <a href='/blog/stephane-richard/2011-10-06/better-late-than-never/' class='artwork'><img class='colorize' title='Better late than never' src='/images/thumb/' alt='Better late than never' /></a>
+    <a class='artwork' href='/blog/stephane-richard/2011-10-06/better-late-than-never/'><img alt='Better late than never' src='/images/thumb/' title='Better late than never' /></a>
 
     <div class='abstract'>
       <p class='date'>06 Oct 2011</p>
@@ -60,10 +60,10 @@
 
   </div><div class='post color-3'>
     <h3>
-      <a href='/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu/' class='title'>Cutting edge gimp in latest ubuntu</a>
+      <a class='title' href='/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu/'>Cutting edge gimp in latest ubuntu</a>
     </h3>
     
-    <a href='/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu/' class='artwork'><img class='colorize' title='Cutting edge gimp in latest ubuntu' src='/images/thumb/' alt='Cutting edge gimp in latest ubuntu' /></a>
+    <a class='artwork' href='/blog/stephane-richard/software/2011-10-05/cutting-edge-gimp-in-latest-ubuntu/'><img alt='Cutting edge gimp in latest ubuntu' src='/images/thumb/' title='Cutting edge gimp in latest ubuntu' /></a>
 
     <div class='abstract'>
       <p class='date'>05 Oct 2011</p>
@@ -76,7 +76,8 @@
     $(document).ready(function() {
         $('.post a.artwork img').each(function(i, e){
           if($(e).attr('src').match(/\/$/)) {
-            $(e).css("height", "100%");
+            $(e).attr('src', '/images/thumb/default.png');
+            $(e).addClass('colorize');
           }
         });
     });
